@@ -1,0 +1,6 @@
+source("loadpowerdata.R")
+message("Creating plot 1 png file")
+png("plot1.png", width = 480, height = 480,  units = "px")
+hist(as.numeric(febpowerdata$Global_active_power), main ="Global Active Power" , col ="red", xlab = "Global Active Power (Kilowatts)")
+dev.off()
+message("Done with plot 1")

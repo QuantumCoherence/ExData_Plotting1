@@ -1,0 +1,6 @@
+source("loadpowerdata.R")
+message("Creating plot 2 png file")
+png("plot2.png", width = 480, height = 480,  units = "px")
+plot(febpowerdata$Time, febpowerdata$Global_active_power, type = "l", xlab="", ylab="Global Active Power (kilowatts)")
+dev.off()
+message("Done with plot 2")
